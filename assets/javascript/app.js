@@ -53,9 +53,11 @@ $(document).on('click', '.btn', function() {
 //Add another car maufucatuere routine
 $("#add-car").on("click", function(event) {
     event.preventDefault();
+    console.log(this);
     var carInput = $("#car-input").val().trim();
     topics.push(carInput);
     downloadIndex.push(1);
+    //$("#car-form").attr("#add-car","");
     //console.log(downloadIndex);
     buttonCreator();
   });
