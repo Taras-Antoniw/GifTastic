@@ -1,13 +1,39 @@
 .gif {
-    border: 5px solid red;
+    border: 2px solid black;
     padding: 20px;
-    width: 100%;
+    margin: 5px 5px 0px 5px;
+    width: 98%;
     border-radius: 10px;
 }
 
 p {
     border: 2px solid black;
     padding:20px;
-    width: 100%;
+    margin: 0px 5px 5px 5px;
+    width: 98%;
     border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    background-color: blue;
+    width: 98%;
+    margin: 5px 5px 5px 5px;
+    color: white;
+    border-radius:10px;
+    padding: 20px; 
+}
+
+#button-bar {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    width: 98%;
+}
+
+#car-form {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    width: 98%;
 }

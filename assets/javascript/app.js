@@ -83,7 +83,7 @@ $("#add-car").on("click", function(event) {
   function buttonCreator() {
     $("#button-bar").text("");
         for (i=0; i<topics.length; i++) {
-        $("#button-bar").append("<button id=choice class='btn btn-secondary' value=" + topics[i] + ">" + topics[i] + "</button><br><br>");
+        $("#button-bar").append("<br><button id=choice class='btn btn-secondary' value=" + topics[i] + ">" + topics[i] + "</button><br>");
         //console.log(topics[i]);
     };
     };
