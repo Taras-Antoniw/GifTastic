@@ -1,6 +1,6 @@
 //Initialize data
 var downloadNumber = 10;
-var topics = ["porsche", "volkswagen", "bmw", "audi"];
+var topics = ["Porsche", "Volkswagen", "BMW", "Audi"];
 var downloadIndex = [1,1,1,1];
 //Start application
 buttonCreator();
@@ -33,8 +33,8 @@ $(document).on('click', '.btn', function() {
         //console.log(response);
         results = response.data
         for (i=downloadStart; i<(downloadTotal); i++) {
-          $photoDiv = $("<div>");
-          $p = $("<p>");
+          $photoDiv = $("<div class='gifContainer'>");
+          $p = $("<h6>");
           $p.text("Title: "+results[i].title);
           $p.append("<br>Rating: "+results[i].rating);
           $image = $("<img>");
@@ -57,7 +57,8 @@ $("#add-car").on("click", function(event) {
     var carInput = $("#car-input").val().trim();
     topics.push(carInput);
     downloadIndex.push(1);
-    //$("#car-form").attr("#add-car","");
+    //$("#car-inout").attr("#add-car","");
+    $("#car-input").val('');
     //console.log(downloadIndex);
     buttonCreator();
   });
@@ -83,7 +84,8 @@ $("#add-car").on("click", function(event) {
   function buttonCreator() {
     $("#button-bar").text("");
         for (i=0; i<topics.length; i++) {
-        $("#button-bar").append("<br><button id=choice class='btn btn-secondary' value=" + topics[i] + ">" + topics[i] + "</button><br>");
+        $("#button-bar").append("<button id=choice class='btn btn-secondary' value=" + topics[i] + ">" + topics[i] + "</button>");
+        $("#button-bar").append("  ");
         //console.log(topics[i]);
     };
     };
